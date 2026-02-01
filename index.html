@@ -202,7 +202,7 @@
 
         .gallery-item {
             width: 320px;
-            height: 420px;
+            height: 170px;
             border-radius: 24px;
             overflow: hidden;
             transition: 0.5s;
@@ -214,12 +214,14 @@
         .gallery-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .gallery-item:hover {
             transform: rotateY(15deg) rotateX(8deg) scale(1.08);
         }
+
+        
 
         /* TIMELINE */
         .timeline {
@@ -359,6 +361,8 @@
 }
 
     </style>
+    <link rel="icon" type="image/x-icon" href="D_icon.jpg">
+
 </head>
 <body>
 
@@ -405,21 +409,28 @@
 
         <!-- NOVATECH -->
         <div class="gallery-item">
-    <a href="https://novatechno.netlify.app/" target="_blank">
-        <img src="novatech.png" alt="NovaTech IT Company Website">
+    <a href="https://novatechno.netlify.app/" target="_blank" class="project-preview">
+        <img src="nova.png" alt="NovaTech IT Company Website">
+    </a>
+</div>
+
+        <!-- elysian -->
+<div class="gallery-item">
+    <a href="https://elysian-4f37eai8x-dharmeshs-projects-f6041960.vercel.app/" target="_blank" class="project-preview" alt="Luxury UI Concept">
+        <img src="elysian.png" alt="Elysian Fashion Website">
     </a>
 </div>
 
 
         <!-- PLACEHOLDER -->
-        <div class="gallery-item">
+        <!-- <div class="gallery-item">
             <img src="https://via.placeholder.com/400x500?text=Luxury+UI+Concept" alt="Luxury UI Concept">
-        </div>
+        </div> -->
 
         <!-- PLACEHOLDER -->
-        <div class="gallery-item">
+        <!-- <div class="gallery-item">
             <img src="https://via.placeholder.com/400x500?text=Landing+Page+Design" alt="Landing Page Design">
-        </div>
+        </div> -->
 
     </div>
 </section>
